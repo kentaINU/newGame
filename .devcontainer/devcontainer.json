@@ -1,0 +1,17 @@
+{
+  "name": "Pygame Dev Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": [
+  "-e", "DISPLAY=host.docker.internal:0",
+  "-e", "LIBGL_ALWAYS_SOFTWARE=1",
+  "-e", "GALLIUM_DRIVER=llvmpipe",
+  "-e", "PYGAME_HIDE_SUPPORT_PROMPT=1"
+],
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  }
+}
