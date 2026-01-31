@@ -1,4 +1,4 @@
-# 🚀 React Physics Invader 開発環境
+# 🚀 React Physics Invader 本番環境ブランチ
 
 このプロジェクトは、**Vite + React** をベースに、物理演算エンジン **Matter.js** を活用したWebゲームです。
 
