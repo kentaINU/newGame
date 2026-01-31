@@ -1,0 +1,9 @@
+export const CANVAS_WIDTH = 800;
+export const CANVAS_HEIGHT = 600;
+export const PLAYER_SPEED = 5;
+export const PLAYER_BULLET_SPEED = 8;
+export const ENEMY_BULLET_SPEED = 4;
+export const ENEMY_SPEED = 1;
+export const ENEMY_DROP_SPEED = 15;
+export const SHOOT_INTERVAL = 200;
+export const ENEMY_SHOOT_CHANCE = 0.005;
