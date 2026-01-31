@@ -1,17 +1,12 @@
 {
-  "name": "Pygame Dev Environment",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "name": "Pygame-Test",
+  "build": { "dockerfile": "Dockerfile" },
   "runArgs": [
-  "-e", "DISPLAY=host.docker.internal:0",
-  "-e", "LIBGL_ALWAYS_SOFTWARE=1",
-  "-e", "GALLIUM_DRIVER=llvmpipe",
-  "-e", "PYGAME_HIDE_SUPPORT_PROMPT=1"
-],
-  "customizations": {
-    "vscode": {
-      "extensions": ["ms-python.python"]
-    }
-  }
+    "-e", "DISPLAY=host.docker.internal:0.0",
+    "--net=host",
+    "--ipc=host",
+    "-e", "DISPLAY=:0",
+    "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+    "-v", "/mnt/wslg:/mnt/wslg"
+  ]
 }
