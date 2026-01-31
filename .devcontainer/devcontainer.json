@@ -2,6 +2,6 @@
   "name": "React-Physics-Game",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "forwardPorts": [3000],
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/frontend",
-  "postCreateCommand": "npm install"
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "postCreateCommand": "cd frontend && npm install"
 }
